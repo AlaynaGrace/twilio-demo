@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twilio Test</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="twilio-demo.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="myApp">
+    <h1>Twilio Test</h1>
+    <div ng-controller="TwilioController as tc">
+      <input type="text" placeholder="Phone Number" value="" ng-model="tc.phoneNumber">
+      <br>
+      <input type="text" placeholder="Type Message Here" value="" ng-model="tc.message">
+      <button type="button" name="button" ng-click="tc.sendMessage()">Send Message</button>
+    </div>
+  </body>
+</html>
